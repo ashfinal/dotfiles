@@ -1,0 +1,27 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$env_var\
+$cmd_duration\
+$fill\
+$line_break\
+$jobs\
+$status\
+$character"""
+
+add_newline = false
+
+command_timeout = 1000
+
+[git_metrics]
+disabled = false
+
+[fill]
+# symbol = "·"
+symbol = ""
