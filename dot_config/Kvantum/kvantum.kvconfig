@@ -1,0 +1,6 @@
+[General]
+theme=KvArcDark#
+
+[Applications]
+KvArc%23=openboard
+KvArcDark%23=edrawmax
