@@ -1,0 +1,8 @@
+@theme "/usr/share/rofi/themes/arthur.rasi"
+configuration {
+  modi: "drun";
+  font: "mono 10";
+  show-icons: true;
+  terminal: "wezterm";
+  display-drun: "  ";
+}
