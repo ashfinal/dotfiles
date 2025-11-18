@@ -1,0 +1,29 @@
+[user]
+  name = {{ .git.user.name }}
+  email = {{ .git.user.email }}
+[diff]
+  algorithm = histogram
+  colorMoved = default
+{{- if lookPath "delta" }}
+[core]
+  pager = delta --diff-so-fancy
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+  side-by-side = true
+  line-numbers = true
+  tabs = 2
+  file-style = omit
+  hunk-header-style = file line-number syntax
+  hunk-header-decoration-style = blue ol ul
+{{- end }}
+[merge]
+  conflictStyle = zdiff3
+[init]
+  defaultBranch = main
+{{ if lookPath "mergiraf" -}}
+[merge "mergiraf"]
+  name = mergiraf
+  driver = mergiraf merge --git %O %A %B -s %S -x %X -y %Y -p %P -l %L
+{{- end }}

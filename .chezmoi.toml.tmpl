@@ -1,0 +1,10 @@
+{{- $git_user_name := "" -}}
+{{- $git_user_email := "" -}}
+{{- if stdinIsATTY -}}
+  {{- $git_user_name = promptStringOnce . "git.user.name" "Full name used for author in commits" -}}
+  {{- $git_user_email = promptStringOnce . "git.user.email" "Email address used for author in commits" -}}
+{{- end -}}
+
+[data]
+  git.user.name = {{ $git_user_name | quote }}
+  git.user.email = {{ $git_user_email | quote }}
