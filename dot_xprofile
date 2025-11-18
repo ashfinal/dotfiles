@@ -1,0 +1,8 @@
+export QT_QPA_PLATFORMTHEME="qt6ct"
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
+export GDK_CORE_DEVICE_EVENTS=1
+export CLIPBOARD_NOAUDIO=1
