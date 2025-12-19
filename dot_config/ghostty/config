@@ -11,7 +11,7 @@ cursor-text = black
 cursor-opacity = 0.5
 right-click-action = ignore
 link-previews = false
-scrollback-limit = 2000000
+scrollback-limit = 20000000
 
 background-opacity = 0.3
 background-opacity-cells = true
