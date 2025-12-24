@@ -1,0 +1,37 @@
+set nocompatible
+syntax on
+filetype plugin indent on
+set autoread
+set autowrite
+set nowritebackup
+set autochdir
+set hidden
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set autoindent
+set smartindent
+set undofile
+set splitright
+set splitbelow
+set completeopt=menu,popup
+set pumheight=10
+set backspace=eol,start,indent
+set fileformats=unix,dos,mac
+set fileencodings=ucs-bom,utf-8,default,cp936,big5,latin1
+set listchars=tab:<->,eol:¬,trail:⋅,extends:»,precedes:« 
+nnoremap <silent> <BS> :nohlsearch<CR>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+inoremap <C-a> <Home>
+inoremap <C-e> <End>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+nnoremap <expr> gV '`[' . strpart(getregtype(), 0, 1) . '`]'
