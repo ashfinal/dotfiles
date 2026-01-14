@@ -104,12 +104,8 @@ zstyle ':completion:*:*:kill:*' insert-ids single
 {{ if lookPath "starship" -}}
 eval "$(starship init zsh)"
 {{- end }}
-# eval "$(pyenv init -)"
 {{- if lookPath "mise" }}
 eval "$(mise activate zsh)"
-{{- end }}
-{{- if lookPath "pipx" }}
-eval "$(register-python-argcomplete pipx)"
 {{- end }}
 {{- if lookPath "atuin" }}
 eval "$(atuin init zsh --disable-up-arrow)"
