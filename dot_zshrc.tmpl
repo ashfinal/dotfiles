@@ -120,3 +120,7 @@ function lk {
 {{ if lookPath "broot" -}}
 source /home/Jenpin/.config/broot/launcher/bash/br
 {{- end }}
+
+{{ if lookPath "tailscale" -}}
+test -e "$HOME/.shellfishrc" && source "$HOME/.shellfishrc"
+{{- end }}
