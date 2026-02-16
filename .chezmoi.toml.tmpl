@@ -5,6 +5,10 @@
   {{- $git_user_email = promptStringOnce . "git.user.email" "Email address used for author in commits" -}}
 {{- end -}}
 
+encryption = "age"
+[age]
+    identity = "~/.config/chezmoi/key.txt"
+    recipient = "age1yk9tjxym8dngaz7jvx6ymer5tkytnts9p8jk5vplqay88k23he7s5lkty5"
 [data]
   git.user.name = {{ $git_user_name | quote }}
   git.user.email = {{ $git_user_email | quote }}
