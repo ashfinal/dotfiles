@@ -11,6 +11,7 @@ cursor-text = black
 cursor-opacity = 0.5
 right-click-action = ignore
 link-previews = false
+scrollbar = never
 scrollback-limit = 20000000
 
 background-opacity = 0.3
@@ -26,24 +27,26 @@ font-style-bold-italic = ExtraBold Italic
 font-size = 9
 font-feature = -calt, -liga, -dlig
 
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = no-bell,notify
+notify-on-command-finish-after = 30s
+
 keybind = ctrl+q>/=toggle_command_palette
-keybind = ctrl+q>ctrl+q=text:\x11
+# keybind = ctrl+q>ctrl+q=text:\x11
+keybind = ctrl+q>ctrl+q=end_key_sequence
 keybind = ctrl+q>j=jump_to_prompt:1
 keybind = ctrl+q>k=jump_to_prompt:-1
-keybind = alt+right=goto_split:right
-keybind = alt+down=goto_split:down
-keybind = alt+left=goto_split:left
-keybind = alt+up=goto_split:up
-keybind = ctrl+shift+t=new_tab
-keybind = ctrl+shift+w=close_tab
-keybind = ctrl+shift+f=write_scrollback_file:paste
 keybind = ctrl+q>v=new_split:right
-keybind = ctrl+q>f=toggle_split_zoom
 keybind = ctrl+q>s=new_split:down
-keybind = ctrl+shift+c=copy_to_clipboard
-keybind = ctrl+shift+v=paste_from_clipboard
-keybind = ctrl+q>l=clear_screen
-keybind = ctrl+q>t=next_tab
-keybind = ctrl+q>T=previous_tab
+keybind = ctrl+q>f=toggle_split_zoom
+keybind = ctrl+q>==equalize_splits
+keybind = ctrl+q>x=close_surface
+
+keybind = ctrl+shift+r=activate_key_table:resize
+keybind = resize/arrow_up=resize_split:up,10
+keybind = resize/arrow_down=resize_split:down,10
+keybind = resize/arrow_left=resize_split:left,10
+keybind = resize/arrow_right=resize_split:right,10
+keybind = resize/catch_all=deactivate_key_table
 
 custom-shader = ~/.config/ghostty/shaders/bloom.glsl
