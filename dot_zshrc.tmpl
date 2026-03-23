@@ -43,7 +43,7 @@ if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; th
 fi
 
 {{ if lookPath "eza" -}}
-alias ls="ls --hyperlink --color=auto"
+alias ls="eza --hyperlink --icons=auto"
 {{- end }}
 {{- if lookPath "sdcv" }}
 alias sdcv="sdcv -c"
