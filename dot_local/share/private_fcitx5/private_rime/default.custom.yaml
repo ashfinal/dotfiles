@@ -1,2 +1,5 @@
 patch:
   "menu/page_size": 7
+  "switcher/hotkeys":
+    - "Control+grave"
+    - "Control+Shift+grave"
