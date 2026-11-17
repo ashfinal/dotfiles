@@ -49,4 +49,4 @@ keybind = resize/arrow_left=resize_split:left,10
 keybind = resize/arrow_right=resize_split:right,10
 keybind = resize/catch_all=deactivate_key_table
 
-custom-shader = ~/.config/ghostty/shaders/bloom.glsl
+# custom-shader = ~/.config/ghostty/shaders/bloom.glsl
